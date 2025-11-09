@@ -63,13 +63,16 @@ export default function NavBar() {
 
           {/* Logo */}
           <div className="flex-1">
-            <Image
-              src="/aircon-experts.svg"
-              alt="Aircon Experts"
-              width={120}
-              height={100}
-              className="mx-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/aircon-experts.svg"
+                alt="Aircon Experts"
+                width={120}
+                height={100}
+                className="mx-auto"
+              />
+            </Link>
+
           </div>
 
           {/* Desktop right */}

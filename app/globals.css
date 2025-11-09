@@ -123,4 +123,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .gradiant-radiant {
+    background: transparent
+      radial-gradient(closest-side at 50% 50%, #0065e1 0%, #094fb5 100%) 0% 0%
+      no-repeat padding-box;
+  }
 }
