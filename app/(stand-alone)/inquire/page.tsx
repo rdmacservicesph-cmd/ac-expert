@@ -40,6 +40,7 @@ export default function Contact() {
                 </ul>
               </div>
             </div>
+
           </div>
           <div>
             <Form />
