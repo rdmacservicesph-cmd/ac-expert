@@ -41,7 +41,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="border">
+          <div>
             <Form />
           </div>
         </motion.div>
