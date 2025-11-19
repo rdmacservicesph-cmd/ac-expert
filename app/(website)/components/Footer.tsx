@@ -12,6 +12,7 @@ export default function Footer() {
             <Link href="/services">Services</Link>
             <Link href="/clients">Clients</Link>
             <Link href="/contact">Contact us</Link>
+            <Link href="/faq">FAQs</Link>
           </div>
         </div>
         <div className="text-white">

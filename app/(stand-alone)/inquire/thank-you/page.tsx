@@ -1,6 +1,9 @@
+import { siteMetadata } from "@/app/metadata/siteMetadata";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = siteMetadata.thankyou
 
 export default function ThankYou() {
   return <div className="bg-[#F2F2F2]">

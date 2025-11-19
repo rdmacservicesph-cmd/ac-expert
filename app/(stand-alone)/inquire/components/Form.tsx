@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -29,6 +30,7 @@ export default function Form() {
     reset
   } = useForm<FormData>();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
@@ -51,7 +53,8 @@ export default function Form() {
 
       console.log('Email sent successfully:', result);
       toast.success('Thank you! Your message has been sent successfully.');
-      reset(); // Reset form after successful submission
+      reset();
+      router.push("/inquire/thank-you");
     } catch (error) {
       console.error('Error submitting form:', error);
       toast.error('Sorry, there was an error sending your message. Please try again.');
