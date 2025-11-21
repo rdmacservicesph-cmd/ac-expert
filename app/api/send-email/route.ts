@@ -89,7 +89,7 @@ export async function POST(request: NextRequest) {
       const adminEmail =
         process.env.ADMIN_EMAIL || "rdm.ac.services.ph@gmail.com";
       const { data: adminData, error: adminError } = await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: "The Aircon Expert Team <info@theairconexpert.com>",
         to: adminEmail,
         subject: `New Inquiry Form Submission from ${firstName} ${lastName}`,
         html: notificationEmailHtml,
@@ -106,7 +106,7 @@ export async function POST(request: NextRequest) {
       // Send confirmation email to customer
       const { data: customerData, error: customerError } =
         await resend.emails.send({
-          from: "onboarding@resend.dev",
+          from: "The Aircon Expert Team <info@theairconexpert.com>",
           to: email,
           subject: "Thank You for Your Inquiry - Aircon Experts",
           html: confirmationEmailHtml,
@@ -187,7 +187,7 @@ export async function POST(request: NextRequest) {
     const adminEmail =
       process.env.ADMIN_EMAIL || "rdm.ac.services.ph@gmail.com";
     const { data: adminData, error: adminError } = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "The Aircon Expert Team <info@theairconexpert.com>",
       to: adminEmail,
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: notificationEmailHtml,
@@ -204,7 +204,7 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to customer
     const { data: customerData, error: customerError } =
       await resend.emails.send({
-        from: "onboarding@resend.dev",
+        from: "The Aircon Expert Team <hello@theairconexpert.com>",
         to: email,
         subject: "Thank You for Contacting Aircon Experts",
         html: confirmationEmailHtml,
