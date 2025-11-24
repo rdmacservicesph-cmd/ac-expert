@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
@@ -262,7 +263,7 @@ export default function Form() {
           </div>
           <div className="col-span-12 text-gray-800">
             <p className="text-sm">
-              By submitting, I agree to the processing and transfer of my personal data by Aircon Experts as described in the Privacy Policy
+              By submitting, I agree to the processing and transfer of my personal data by Aircon Experts as described in the <Link href="/privacy-policy" className="text-primary">Privacy Policy</Link>
             </p>
           </div>
           <div className="col-span-12">

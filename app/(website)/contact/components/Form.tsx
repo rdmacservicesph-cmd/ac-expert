@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import Link from "next/link";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -62,9 +63,9 @@ export default function Form() {
   const phoneRegex = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/;
 
   return (
-    <div className="col-span-6 bg-white shadow1 rounded-2xl md:-mt-20 -mt-45 md:p-8 px-6 py-8 max-md:order-first">
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="grid grid-cols-12 gap-4">
+    <div className="col-span-6 md:-mt-20 -mt-45 max-md:order-first">
+      <form onSubmit={handleSubmit(onSubmit)} className="bg-white shadow1 rounded-2xl md:p-8 px-6 py-8">
+        <div className="grid grid-cols-12 gap-4 pb-8">
           <div className="col-span-6">
             <label className="block mb-1.5">First Name<span className="text-red-500">*</span></label>
             <Input
@@ -228,7 +229,7 @@ export default function Form() {
           </div>
           <div className="col-span-12 text-gray-800">
             <p className="text-sm">
-              By submitting, I agree to the processing and transfer of my personal data by Aircon Experts as described in the Privacy Policy
+              By submitting, I agree to the processing and transfer of my personal data by Aircon Experts as described in the <Link href="/privacy-policy" className="text-primary">Privacy Policy</Link>
             </p>
           </div>
           <div className="col-span-12">
