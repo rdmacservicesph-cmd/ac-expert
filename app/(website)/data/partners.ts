@@ -1,7 +1,7 @@
 export const partners = [
   {
     name: "Mitsubishi",
-    img: "mitshubishi.svg",
+    img: "mistsubishi-heavy-duty-ic.jpg",
   },
   {
     name: "Mitsubishi Electric",
