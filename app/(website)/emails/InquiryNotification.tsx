@@ -32,8 +32,8 @@ export const InquiryNotification = ({
   phoneNumber,
   region,
   message,
-  baseUrl = "https://ac-expert.vercel.app",
-  logoUrl = "https://ac-expert.vercel.app/aircon-experts.svg",
+  baseUrl = "https://www.theairconexpert.com",
+  logoUrl = "https://www.theairconexpert.com/aircon-experts.svg",
 }: InquiryNotificationProps) => {
   return (
     <Html>
