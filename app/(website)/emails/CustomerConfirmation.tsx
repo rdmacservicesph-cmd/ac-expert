@@ -22,7 +22,7 @@ export const CustomerConfirmation = ({
   firstName,
   lastName,
   baseUrl = "https://www.theairconexpert.com",
-  logoUrl = "https://www.theairconexpert.com/aircon-experts.svg",
+  logoUrl = "https://www.theairconexpert.com/aircon-experts.png",
 }: CustomerConfirmationProps) => {
   return (
     <Html>

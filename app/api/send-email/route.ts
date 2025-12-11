@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
 
     // Get base URL for assets (logo, etc.)
     // Use production URL for logo to ensure it works in emails
-    const logoUrl = "https://www.theairconexpert.com/aircon-experts.svg";
+    const logoUrl = "https://www.theairconexpert.com/aircon-experts.png";
     const baseUrl =
       process.env.NEXT_PUBLIC_BASE_URL ||
       (process.env.VERCEL_URL
