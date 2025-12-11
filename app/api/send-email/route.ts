@@ -14,12 +14,12 @@ export async function POST(request: NextRequest) {
 
     // Get base URL for assets (logo, etc.)
     // Use production URL for logo to ensure it works in emails
-    const logoUrl = "https://ac-expert.vercel.app/aircon-experts.svg";
+    const logoUrl = "https://www.theairconexpert.com/aircon-experts.svg";
     const baseUrl =
       process.env.NEXT_PUBLIC_BASE_URL ||
       (process.env.VERCEL_URL
         ? `https://${process.env.VERCEL_URL}`
-        : "https://ac-expert.vercel.app");
+        : "https://www.theairconexpert.com");
 
     // Dynamically import ReactDOMServer to avoid Next.js warning
     const ReactDOMServer = (await import("react-dom/server")).default;
