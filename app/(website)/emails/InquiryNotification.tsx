@@ -43,8 +43,7 @@ export const InquiryNotification = ({
         <Container style={container}>
           <Img
             src={logoUrl}
-            width="120"
-            height="100"
+            width="140"
             alt="Aircon Experts"
             style={logo}
           />
