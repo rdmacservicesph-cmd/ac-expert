@@ -3,11 +3,13 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import FooterCta from "../components/FooterCta";
 import { coreValues } from "../data/core-values";
 import { customers } from "../data/customers";
 
-export default function AboutUs() {
+
+export default function AboutUsClient() {
   return <div>
     <main>
       <section className="md:bg-[url('/about/about-hero.jpg')] bg-[url('/mobile/about.jpg')] bg-cover bg-center md:h-[700px] h-screen">
@@ -25,7 +27,9 @@ export default function AboutUs() {
               We specialize in HVAC design, installation, and maintenance, delivering efficient and reliable solutions for every need. Backed by years of expertise, our team ensures comfort and performance in every project—from small businesses to large industrial facilities.
             </p>
             <div className="md:mt-10 mt-6 flex max-md:flex-col gap-3">
-              <Button size="lg">Inquire now</Button>
+              <Link href="/inquire">
+                <Button size="lg">Inquire now</Button>
+              </Link>
             </div>
           </motion.div>
         </div>

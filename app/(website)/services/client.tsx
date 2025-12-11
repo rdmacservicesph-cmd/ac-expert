@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import FooterCta from "../components/FooterCta";
 
 const ductworkSolutions = [
@@ -22,7 +23,8 @@ const ductworkSolutions = [
   }
 ]
 
-export default function Services() {
+
+export default function ServicesClient() {
   return <main>
     <section className="md:bg-[url('/services/service-hero-ae.jpg')] bg-[url('/mobile/services.jpg')] bg-cover bg-center md:h-[700px] h-screen">
       <div className="cg-container flex md:items-center items-end max-md:pb-10 h-full max-md:text-white">
@@ -39,7 +41,9 @@ export default function Services() {
             Keep your workplace comfortable and productive with our commercial air conditioning services. We’ve partnered with BPOs, banks, offices, schools, and retail spaces to factories, warehouses, and large-scale operations. To deliver customized cooling systems, energy-saving HVAC designs, and quick-response repairs.
           </p>
           <div className="md:mt-10 mt-6 flex max-md:flex-col gap-3">
-            <Button size="lg">Inquire now</Button>
+            <Link href="/inquire">
+              <Button size="lg">Inquire now</Button>
+            </Link>
           </div>
         </motion.div>
       </div>

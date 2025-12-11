@@ -86,7 +86,7 @@ export default function NavBar() {
             >
               Contact us
             </Link>
-            <Button>Inquire now</Button>
+            <Link href="/inquire"><Button>Inquire now</Button></Link>
           </div>
 
           {/* Hamburger button */}

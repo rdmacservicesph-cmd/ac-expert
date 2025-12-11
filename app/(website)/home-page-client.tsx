@@ -3,11 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { motion, useInView } from "framer-motion";
 import { ArrowRightCircle } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import FooterCta from "./components/FooterCta";
-import { partners } from "./data/partners";
 import WhyChooseUs from "./components/WhyChooseUs";
 
 const ourPromises = [
@@ -58,7 +56,8 @@ function AnimatedSection({ children, className = "", delay = 0 }: { children: Re
   );
 }
 
-export default function Home() {
+
+export default function HomeClient() {
   return (
     <div>
       <main>
@@ -77,8 +76,12 @@ export default function Home() {
                 Combining advanced technology and expert service to deliver<br className="max-md:hidden" /> sustainable, high-quality HVAC solutions across industries.
               </p>
               <div className="md:mt-10 mt-6 flex max-md:flex-col gap-3">
-                <Button size="lg">Learn more</Button>
-                <Button size="lg" variant="white">Inquire now</Button>
+                <Link href="/services">
+                  <Button size="lg">Learn more</Button>
+                </Link>
+                <Link href="/inquire">
+                  <Button size="lg" variant="white">Inquire now</Button>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -145,7 +148,9 @@ export default function Home() {
                 <h5 className="text-xl text-gray-600 mb-3">What Sets Us Apart</h5>
                 <h2 className="md:text-4xl text-3xl font-bold mb-4">Broad Market Leader</h2>
                 <p className="text-lg mb-4">We deliver reliable, energy-efficient air conditioning in the Philippines, combining global standards with local expertise. With precise installations, on-time projects, and 24/7 support, we&apos;re the partner you can trust for lasting comfort.</p>
-                <Button>Inquire now</Button>
+                <Link href="/inquire">
+                  <Button>Inquire now</Button>
+                </Link>
               </div>
             </div>
           </section>

@@ -4,7 +4,8 @@ import FooterCta from "../components/FooterCta";
 import WhyChooseUs from "../components/WhyChooseUs";
 import { companies, companies2 } from "../data/companies";
 
-export default function Clients() {
+
+export default function ClientsClient() {
   return <main>
     <section className="md:bg-[url('/clients/clients-hero.jpg')] bg-[url('/mobile/clients.jpg')] bg-cover bg-center md:h-[700px] h-screen">
       <div className="cg-container flex max-md:items-end max-md:pb-10 h-full text-white text-center">
