@@ -16,7 +16,7 @@ export const coreValues = [
   },
 
   {
-    img: "icn_integrity.svg",
+    img: "icn-innovate.svg",
     title: "Innovation",
     description: "We lead with advanced technology and proven methods to deliver efficient, reliable HVAC solutions."
   },
