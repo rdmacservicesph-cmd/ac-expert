@@ -114,7 +114,7 @@ export default function AboutUsClient() {
             coreValues.map((coreValue) => <div key={coreValue.title} className="col-span-2 border rounded-2xl px-4 py-4">
               <Image src={"/about/" + coreValue.img} alt={coreValue.title} width={110} height={110} className="mx-auto mb-2" />
               <h5 className="text-xl font-bold mb-4">{coreValue.title}</h5>
-              <p>We take pride in every project, delivering work built on skill and attention to detail.</p>
+              <p>{coreValue.description}</p>
             </div>)
           }
         </div>

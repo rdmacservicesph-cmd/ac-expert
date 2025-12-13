@@ -154,9 +154,11 @@ export default function NavBar() {
                       Contact us
                     </Link>
 
-                    <Button onClick={() => setIsOpen(false)}>
-                      Inquire now
-                    </Button>
+                    <Link href="/inquire">
+                      <Button onClick={() => setIsOpen(false)}>
+                        Inquire now
+                      </Button>
+                    </Link>
                   </nav>
                 </motion.div>
               </>
